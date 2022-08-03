@@ -4,6 +4,10 @@
 
 <br/>
 
+<i>under construction 🚧</i>
+
+<br/>
+
 >## About
 Refactoring of a netflix clone I made a few months ago, this time wiht React.<br />
 The first version can be found here: [Sagaflix - HTML/CSS/JS](https://github.com/giselle-ferreira/SagaFlix-NetflixClone) <br/>
