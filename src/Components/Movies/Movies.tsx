@@ -1,5 +1,8 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination } from 'swiper';
+import { Container } from "./style";
 
 type TMovie = {
     "title": string,
@@ -7,6 +10,7 @@ type TMovie = {
     "franchise": string,
     "genre": string,
     "duration": string,
+    "img": string
 }
 
 export const Movies = () => {
@@ -28,14 +32,24 @@ export const Movies = () => {
     })
 
   return (
-    <div>
+    <Swiper
+        style={{ marginBottom: '130px' }}
+        spaceBetween={180}
+        modules={[Pagination]}
+        slidesPerView={7}             
+        pagination={true}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+    >
         {data.map((mov) => {
             return(
-                <div key={mov.title}>
-                    {mov.franchise}
-                </div>
+                <SwiperSlide>
+                    <Container key={mov.title}>
+                        <img src={mov.img} alt="" />
+                    </Container>      
+                </SwiperSlide>         
             )
         })}
-    </div>
+    </Swiper>
   )
 }
