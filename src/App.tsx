@@ -1,6 +1,6 @@
 import { Footer } from "./Components/Footer/Footer"
 import { Header } from "./Components/Header/Header"
-import { Main } from "./Components/Main/Main"
+import { Banner } from "./Components/Banner/Banner"
 import { Movies } from "./Components/Movies/Movies"
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <div >
       <Header />
-      <Main />
+      <Banner />
       <Movies />
       <Footer />
     </div>

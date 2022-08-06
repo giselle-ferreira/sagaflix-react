@@ -5,12 +5,12 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Helvetica', sans-serif;
     }
 
     body {
-        background-color: #333;
-        color: #b9b9b9;
+        background-color: #141414;
+        color: #f0f0f0;
     }
 
     a {
