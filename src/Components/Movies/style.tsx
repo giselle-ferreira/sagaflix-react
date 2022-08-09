@@ -1,5 +1,17 @@
 import styled from 'styled-components';
 
+export const Wrapper = styled.section`
+    margin-top: 25em;
+    
+    Swipper {
+        margin: 1em auto;
+    }
+
+    h3 {
+        margin-left: 2.5em;
+    }
+`
+
 export const Container = styled.div`
     margin: 1.5em 3em;
     display: flex;

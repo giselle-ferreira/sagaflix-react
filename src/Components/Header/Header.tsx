@@ -1,5 +1,6 @@
 import { Container, Menu, UserSection } from "./style"
 import { FaBell, FaSearch } from 'react-icons/fa'
+import { IoMdArrowDropdown } from 'react-icons/io'
 import profile from '/media/profile-img.png'
 import logo from '/media/logo.png'
 
@@ -19,9 +20,9 @@ export const Header = () => {
 
         <UserSection>
             <ul>
-                <li><a href=""><FaSearch size={22} /></a></li>
-                <li><a href=""><FaBell size={22} /></a></li>
-                <li><a href=""><img src={profile} width={24} /></a></li>                
+                <li><a href=""><FaSearch size={20} /></a></li>
+                <li><a href=""><FaBell size={20} /></a></li>
+                <li><a href=""><img src={profile} width={28} /><IoMdArrowDropdown size={20} /></a></li>                
             </ul>
         </UserSection>
 

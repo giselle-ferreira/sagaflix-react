@@ -36,6 +36,13 @@ export const UserSection = styled.div`
 
     ul {
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 1.8em;
+
+        li img {
+            border-radius: 4px;
+            margin-right: .5em;
+        }
     }
 `;

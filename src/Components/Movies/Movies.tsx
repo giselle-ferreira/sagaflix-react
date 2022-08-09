@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-import { Container } from "./style";
+import { Container, Wrapper } from "./style";
 import { TMovie } from '../../Interfaces'
 import api from '../../api'
 
@@ -31,10 +31,10 @@ export const Movies = () => {
   ];
 
   return (
-    <>
+    <Wrapper>
       {sagas.map((saga) => {
         return (
-          <>
+           <>
             <h3>{saga}</h3>
             <Swiper
               style={{ marginBottom: "10px" }}
@@ -60,6 +60,6 @@ export const Movies = () => {
           </>
         );
       })}
-    </>
+    </Wrapper>
   );
 };
