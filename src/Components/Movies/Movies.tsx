@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import { Container, Wrapper } from "./style";
 import { TMovie } from '../../Interfaces'
+import { ImSpinner8 } from 'react-icons/im';
 import api from '../../api'
 
 export const Movies = () => {
@@ -36,6 +37,7 @@ export const Movies = () => {
         return (
            <>
             <h3>{saga}</h3>
+            {isLoading && <div id="loading"><ImSpinner8 size={30} /></div>}
             <Swiper
               style={{ marginBottom: "10px" }}
               spaceBetween={20}
@@ -43,8 +45,7 @@ export const Movies = () => {
               slidesPerView={5}
               pagination={true}
               navigation={true}
-            >
-              {isLoading && <p>Loading...</p>}
+            >              
               {data.map((movie) => {
                 if (movie.franchise === saga) {
                   return (

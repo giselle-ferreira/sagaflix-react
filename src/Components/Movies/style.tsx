@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-    margin-top: 25em;
+    margin-top: 29em;
     
     Swipper {
         margin: 1em auto;
@@ -10,7 +10,20 @@ export const Wrapper = styled.section`
     h3 {
         margin-left: 2.5em;
     }
-`
+
+    #loading {
+        margin: 2em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: spin 2s linear infinite;
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    }
+`;
 
 export const Container = styled.div`
     margin: 1.5em 3em;
